@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --linear-1: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
+  --linear-2: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  --dark-1: #3c354f;
+  --dark-2: rgba(11, 2, 35, 0.1);
+  --dark-3: #534c64;
+  --dark-4: #0b0223;
+  --dark-5: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
