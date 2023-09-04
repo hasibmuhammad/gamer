@@ -44,6 +44,7 @@ header {
 }
 .social-icons {
   display: flex;
+  align-items: center;
   gap: 1.3rem;
   background-color: var(--dark-2);
   padding: 18px 24px;
@@ -52,7 +53,8 @@ header {
 ul li {
   list-style: none;
 }
-ul li a {
+ul li a,
+.social-icons p {
   text-decoration: none;
   color: var(--dark-1);
   font-size: 1.2rem;
