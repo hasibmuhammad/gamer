@@ -5,11 +5,6 @@
 }
 
 :root {
-  --linear-bg: linear-gradient(
-    235deg,
-    rgba(140, 87, 238, 0.03) 3.9%,
-    rgba(241, 68, 174, 0.03) 100.56%
-  );
   --linear-1: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
   --linear-2: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   --dark-1: #3c354f;
@@ -26,7 +21,7 @@ body {
 header {
   /* max-width: 1340px;
   margin: 0 auto; */
-  margin-top: 3rem;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 .logo {
   display: flex;
@@ -73,8 +68,93 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 38px 0;
 }
 
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-image: url("../images/Group\ 14.png");
+  background-repeat: no-repeat;
+  background-position: left left;
+}
+
+.banner-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 148px 0;
+}
+
+.banner-title {
+  color: var(--dark-4);
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.goat {
+  background: var(--linear-2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 800;
+
+  margin-bottom: 1.5rem;
+}
+.icon {
+  color: #ff42a5;
+}
+.info .item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+.item p {
+  color: var(--dark-3);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+.btn-primary,
+.btn-secondary {
+  padding: 21px 40px;
+  background: var(--linear-1);
+  border: none;
+  border-radius: 3rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.btn-secondary {
+  background: #4ec5f7;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  white-space: nowrap;
+}
+
+.banner-right img {
+  width: 70%;
+}
 /* For Mobile Devices */
 @media screen and (max-width: 576px) {
   .navigation,
@@ -83,6 +163,13 @@ nav {
   }
   .menu {
     margin-top: 1.5rem;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner-right {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -96,5 +183,12 @@ nav {
   }
   .navigation {
     margin-top: 1.5rem;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner-right {
+    width: 100%;
+    text-align: center;
   }
 }
